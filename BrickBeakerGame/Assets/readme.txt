@@ -6,5 +6,5 @@ Version 0.1
 -player moves using transform.translate, maybe we will use physics 
 	later (addforce) to allow for more "slippery" movement.
 
--added brick prefab (2D square collider)
+-added brick prefabs (2D square collider) for each type of block (1,2,3 and 4 hits accordingly)
 -rendered all sprites "for android" (whatever that means)
