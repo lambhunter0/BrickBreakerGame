@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{CF95DAC7-8C8A-6BFE-6290-997FA7B870A7}") = "BrickBeakerGame", "Assembly-CSharp.csproj", "{D3FAE3C9-3354-F566-5547-B22007BE620E}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickBeakerGame", "Assembly-CSharp.csproj", "{D3FAE3C9-3354-F566-5547-B22007BE620E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
