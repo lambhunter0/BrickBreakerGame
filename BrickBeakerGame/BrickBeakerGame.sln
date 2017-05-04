@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{CF95DAC7-8C8A-6BFE-6290-997FA7B870A7}") = "BrickBeakerGame", "Assembly-CSharp.csproj", "{D3FAE3C9-3354-F566-5547-B22007BE620E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3FAE3C9-3354-F566-5547-B22007BE620E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FAE3C9-3354-F566-5547-B22007BE620E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FAE3C9-3354-F566-5547-B22007BE620E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FAE3C9-3354-F566-5547-B22007BE620E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
