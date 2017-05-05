@@ -14,3 +14,4 @@ Version 0.3
 -added walls
 -added ball
 -player loops around level
+-fixed the Brick prefab situation

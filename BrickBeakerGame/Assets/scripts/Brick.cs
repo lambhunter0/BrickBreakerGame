@@ -8,6 +8,7 @@ public class Brick : MonoBehaviour {
 	private Sprite currentSprite;
 
 	//method used to change the sprite being used for the object
+	//Assigned by the number of hits variable
 	void changeSprite (){
 		switch (numberOfHits) {
 			case 0:
@@ -22,6 +23,7 @@ public class Brick : MonoBehaviour {
 			case 3:
 				currentSprite = Resources.Load("brick4",typeof(Sprite)) as Sprite;
 				break;
+			//Note: default causes a compilation error
 			default:
 				break;
 		}
