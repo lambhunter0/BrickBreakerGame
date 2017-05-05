@@ -5,12 +5,18 @@ using UnityEngine;
 public class playerController : MonoBehaviour {
 
 	public float speed;
-	public Transform rightWall;
-	public Transform leftWall;
+	public GameObject rightWall;
+	public GameObject leftWall;
+	private int health;
+
+	void Start(){
+		health = 3;
+	}
 
 	void Update () {
 		moveInput ();
 		checkBoundaries ();
+		//Die ();
 	}
 
 	void moveInput(){
@@ -26,13 +32,24 @@ public class playerController : MonoBehaviour {
 	}
 
 	void checkBoundaries(){
-		if (transform.position.x > rightWall.position.x){
-			Vector3 pos = new Vector3 (leftWall.position.x,transform.position.y,transform.position.z);
+		if (transform.position.x > rightWall.transform.position.x){
+			Vector3 pos = new Vector3 (leftWall.transform.position.x,transform.position.y,transform.position.z);
 			transform.position = pos;
 		}
-		if (transform.position.x < leftWall.position.x){
-			Vector3 pos = new Vector3 (rightWall.position.x,transform.position.y,transform.position.z);
+		if (transform.position.x < leftWall.transform.position.x){
+			Vector3 pos = new Vector3 (rightWall.transform.position.x,transform.position.y,transform.position.z);
 			transform.position = pos;
 		}
 	}
+
+	public void removeHealth(){
+		health--;
+	}
+
+	//void Die(){
+	//	if (health < 1) {
+	//		//GameObject.Destroy (this);
+	//		//die code
+	//	}
+	//}
 }
