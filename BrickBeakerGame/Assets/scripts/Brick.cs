@@ -31,15 +31,12 @@ public class Brick : MonoBehaviour {
 		GetComponent<SpriteRenderer>().sprite = currentSprite;
 	}
 
-	/*
+
 	void OnCollisionEnter2D(Collision2D collision2D)
 	{
-		if (collision2D.transform.name == "ball")
-		{
-			numberOfHits = numberOfHits - 1;
-		}
-	}*/
-
+		numberOfHits--; 
+		changeSprite ();
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -48,6 +45,5 @@ public class Brick : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		changeSprite ();
 	}
 }
