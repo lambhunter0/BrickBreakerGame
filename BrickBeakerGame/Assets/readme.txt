@@ -14,4 +14,8 @@ Version 0.3
 -added walls
 -added ball
 -player loops around level
+
+Version 0.4
 -fixed the Brick prefab situation
+-Added brick change on collision (known issue: one collision changes the variable too many times)
+-Score display in progress 

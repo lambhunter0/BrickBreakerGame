@@ -10,9 +10,9 @@ public class Game : MonoBehaviour {
 
 	void Start () {
 		Instantiate (playerPrefab, playerSpawn.transform);
-		Instantiate(ballPrefab,ballSpawn.transform);
+		Instantiate (ballPrefab,ballSpawn.transform);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		
