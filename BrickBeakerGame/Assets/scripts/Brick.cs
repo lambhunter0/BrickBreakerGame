@@ -23,20 +23,31 @@ public class Brick : MonoBehaviour {
 			case 3:
 				currentSprite = Resources.Load("brick4",typeof(Sprite)) as Sprite;
 				break;
-			//Note: default causes a compilation error
+			//Note: any number that is not here will destroy the object
 			default:
+				Destroy (gameObject);
 				break;
 		}
+		GetComponent<SpriteRenderer>().sprite = currentSprite;
 	}
+
+	/*
+	void OnCollisionEnter2D(Collision2D collision2D)
+	{
+		if (collision2D.transform.name == "ball")
+		{
+			numberOfHits = numberOfHits - 1;
+		}
+	}*/
+
 
 	// Use this for initialization
 	void Start () {
 		changeSprite ();
-		GetComponent<SpriteRenderer>().sprite = currentSprite;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		changeSprite ();
 	}
 }
