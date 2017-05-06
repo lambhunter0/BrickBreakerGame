@@ -16,5 +16,5 @@
 
 #### Version 0.1 
 - Added background that scrolls-added player (capsule gameObject for now with a blue material)
-- Player moves using transform.translate, maybe we will use physics later (addforce) to allow for more "slippery" movement.
+- Player moves using transform.translate
 
